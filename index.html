@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,64 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-     <div id="header">
+    <div id="header">
         <div class="container">
             <nav>
-                <img src="image/logo.png" class="logo">
-                <ul id="sidemenu()">
+                <img src="image/pn.png" class="logo">
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#tech-section">Technologies</a></li>
                     <li><a href="#contact">Contact</a></li>
-                   <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi. I'm <span>Vasudev</span><br>From India</h1>
+            <div class="row">
+                <div class="header-text">
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Vasu107"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vasudev-yadav-7790a7328"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <p id="typing-text">UI/UX Designer</p>
+                    <h1>Hi. I'm <span>Vasudev Yadav</span><br>
+                        <p>Python Developer | Web Developer</p>
+                    </h1>
+
+                </div>
+                <div class="hero-image">
+                    <img src="image/vasudev.jpeg" alt="Profile Image">
+                </div>
             </div>
         </div>
-     </div>
-<!-- ---------------------about---------------- -->
-     <div id="about">
+    </div>
+    <!-- ---------------------about---------------- -->
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="image/vasudev.png">
+                    <img src="image/vasu.jpeg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo provident impedit nemo, consequuntur dolorem rerum culpa voluptates debitis distinctio iusto dolores laborum ratione ipsum aperiam dolorum in saepe molestiae cumque!</p>
-                    
+                    <p>As a final-year B.Tech student, I specialize in Python development, machine learning, and backend
+                        technologies. I have hands-on experience with MongoDB, HTML, CSS, React.js, and Next.js.
+
+                        My recent project, AI-Powered Interview Preparation System, combines React.js, Next.js, Python,
+                        ML models, and MongoDB to create an intelligent platform that helps users simulate and prepare
+                        for real interview environments. This project earned the Second Prize at my college’s Tech
+                        Yuva Innovation Event.
+
+                        With a strong passion for backend engineering, I am eager to begin my career as a Python Backend
+                        Developer, focusing on scalable APIs and AI-integrated systems.</p>
+
                     <div class="tab-title">
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -47,67 +74,107 @@
                     <div class="tab-contents active-tab" id="Skills">
                         <ul>
                             <li><span>UI/UX</span><br>Desining Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Bulding Android/ios apps</li>
+                            <li><span>Web Development</span><br>HTML, CSS, Python, Machine Learning</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>UI/UX</span><br>Desining Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Bulding Android/ios apps</li>
+                            <li><span>Web Development</span><br>Website Development</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>UI/UX</span><br>Desining Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Bulding Android/ios apps</li>
+                            <li><span>B.Tech (IT) 73%</span><br>Buddha Institute Of Technology, GIDA, Gorakhpur 273209
+                            </li>
+                            <li><span>Intermediate 62%</span><br>Lady Prasana Kaur Inter Collage, Basdila, Sardarnagar,
+                                Gorakhpur</li>
+                            <li><span>High School 74%</span><br>Lady Prasana Kaur Inter Collage, Basdila, Sardarnagar,
+                                Gorakhpur</li>
                         </ul>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
-     </div>
-     <!-- -----------------services--------------------- -->
-      <div id="services">
+    </div>
+
+    <!-- Technology Section -->
+
+    <div id="tech-section">
+        <div class="tech-section">
+            <h2>Work with Technologies</h2>
+
+            <div class="tech-grid">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                    alt="MongoDB" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -----------------services--------------------- -->
+    <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Designer</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit aliquid accusamus facere! Iste, amet rerum commodi, dolorem nesciunt architecto reiciendis facere minus officiis, velit tempora aspernatur explicabo soluta mollitia.</p>
-                    <a href="#">Learn more</a>
+                    <p>Web Designer & Python Developer
+
+                        I create responsive, visually appealing websites and
+                        powerful web applications focused on performance,
+                        usability, and clean code.
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
                 <div>
-                    <i class="fa-solid fa-crop"></i> 
+                    <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Designer</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit aliquid accusamus facere! Iste, amet rerum commodi, dolorem nesciunt architecto reiciendis facere minus officiis, velit tempora aspernatur explicabo soluta mollitia.</p>
-                    <a href="#">Learn more</a>
+                    <p>UI/UX Designer
+                        Crafting user-focused designs that are intuitive,
+                        accessible, and visually engaging.
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>App Designer</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit aliquid accusamus facere! Iste, amet rerum commodi, dolorem nesciunt architecto reiciendis facere minus officiis, velit tempora aspernatur explicabo soluta mollitia.</p>
-                    <a href="#">Learn more</a>
+                    <h2>Software Development</h2>
+                    <p>Building scalable, reliable, and efficient software
+                        solutions to solve real-world problems.</p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
             </div>
         </div>
-      </div>
+    </div>
 
-      <!-- -----------------portfolio------------------------- -->
-       <div id="portfolio">
+    <!-- -----------------portfolio------------------------- -->
+    <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="image/1.png">
+                    <img src="image/11.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you the talented people around the world. Download it from play store.</p>
+                        <h3>AI-Powered Interview Preparation System Website</h3>
+                        <p>This Project is a web application that is helpful for users to practice for mock interviews
+                            and analyzing their interview performance.Trained, designed and implemented machine learning
+                            models for speech, emotion and facial
+                            expression analysis.
+                            Technologies: React.js, Next.js, Machine Learning, OpenCV, MongoDB, Vapi.
+                        </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>  
+                    </div>
                 </div>
                 <div class="work">
                     <img src="image/2.png">
@@ -128,12 +195,12 @@
             </div>
             <a href="#" class="btn">See More</a>
         </div>
-       </div>
+    </div>
 
 
-       <!-- -----------------------contact-------------------------- -->
+    <!-- -----------------------contact-------------------------- -->
 
-       <div id="contact">
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -142,11 +209,12 @@
                     <p><i class="fa-solid fa-phone-volume"></i>+91 8957273107</p>
                     <div class="social-icons">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/Vasu107"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/vasudev-yadav-7790a7328"><i
+                                class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="image/vasudev CV.pdf" download class="btn btn2">Download CV</a>
+                    <a href="image/Vasudev Resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -155,29 +223,30 @@
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
-                    <span id="msg">hello</span>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
         <div class="copyright">
             <p>copyright @vasudev, made with <i class="fa-solid fa-heart"></i> by Vasudev yadav</p>
         </div>
-       </div>
+    </div>
 
 
 
+    <!-- script -->
 
 
-     <script>
+    <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-    
+
         function opentab(tabname) {
             for (let tablink of tablinks) {
-                tablink.classList.remove("active-link");  
+                tablink.classList.remove("active-link");
             }
             for (let tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");  
+                tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab")
@@ -186,35 +255,67 @@
 
     <script>
 
-        var sidemenu = document.getElementById("sidemenu()");
+        var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
+        function openmenu() {
             sidemenu.style.right = "0";
         }
-        function closemenu(){
+        function closemenu() {
             sidemenu.style.right = "-200px";
         }
 
     </script>
-    
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwTFbwXPPdW6aKpV9DlPcSCXXP1WwXeC9BPHaxx4lPRn9h0NNUkkvj5fUjRbBgxeoD7/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response =>{
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-    
+    <script>
+        const texts = ['UI/UX Designer', 'Web Developer', 'App Developer', 'Graphic Designer'];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typing-text');
+
+        function typeWriter() {
+            const currentText = texts[textIndex];
+
+            if (isDeleting) {
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentText.length) {
+                setTimeout(() => isDeleting = true, 1000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+            }
+
+            setTimeout(typeWriter, isDeleting ? 50 : 100);
+        }
+
+        typeWriter();
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTFbwXPPdW6aKpV9DlPcSCXXP1WwXeC9BPHaxx4lPRn9h0NNUkkvj5fUjRbBgxeoD7/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
 </body>
+
 </html>
