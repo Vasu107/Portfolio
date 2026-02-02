@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <nav>
+                <img src="image/pn.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="Technology.html">Technologies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/vasu.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a final-year B.Tech student, I specialize in Python development, machine learning, and backend
+                        technologies. I have hands-on experience with MongoDB, HTML, CSS, React.js, and Next.js.
+
+                        My recent project, AI-Powered Interview Preparation System, combines React.js, Next.js, Python,
+                        ML models, and MongoDB to create an intelligent platform that helps users simulate and prepare
+                        for real interview environments. This project earned the Second Prize at my college’s Tech
+                        Yuva Innovation Event.
+
+                        With a strong passion for backend engineering, I am eager to begin my career as a Python Backend
+                        Developer, focusing on scalable APIs and AI-integrated systems.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desining Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>HTML, CSS, Python, Machine Learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desining Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Website Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech (IT) 73%</span><br>Buddha Institute Of Technology, GIDA, Gorakhpur 273209
+                            </li>
+                            <li><span>Intermediate 62%</span><br>Lady Prasana Kaur Inter Collage, Basdila, Sardarnagar,
+                                Gorakhpur</li>
+                            <li><span>High School 74%</span><br>Lady Prasana Kaur Inter Collage, Basdila, Sardarnagar,
+                                Gorakhpur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+            <p> @vasudev, made with <i class="fa-solid fa-heart"></i> by Vasudev yadav</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
