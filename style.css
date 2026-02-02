@@ -215,7 +215,7 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* padding-top: 60px; */
+    padding-top: 60px;
     align-items: center;
 }
 
@@ -668,7 +668,7 @@ nav .fa-xmark {
     }
 
     nav ul {
-        background: #4d194d;
+        background: linear-gradient(to left, #4d194d, #006466);
         position: fixed;
         top: 0;
         right: -200px;
